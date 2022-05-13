@@ -10,30 +10,30 @@
 <body class="bg-secondary d-flex justify-content-center align-items-center vh-100">
 
   <div class="container mt-3">
-    <form class="row g-3" action="response.php" method="POST" enctype="multipart/form-data" >
+    <form class="row g-3" action="./backend/response.php" method="POST" enctype="multipart/form-data" id="form">
       <div class="col-md-6">
         <label for="name" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="name" name="name">
+        <input type="text" class="form-control" id="name" name="name" required>
       </div>
       <div class="col-md-6">
         <label for="surname" class="form-label">Cognome</label>
-        <input type="text" class="form-control" id="surname" name="surname">
+        <input type="text" class="form-control" id="surname" name="surname" required>
       </div>
       <div class="col-md-6">
         <label for="phone" class="form-label">Telefono</label>
-        <input type="phone" class="form-control" id="phone" name="phone">
+        <input type="phone" class="form-control" id="phone" name="phone" required>
       </div>
       <div class="col-md-6">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email">
+        <input type="email" class="form-control" id="email" name="email" required>
       </div>
       <div class="col-md-6">
         <label for="age" class="form-label">Età</label>
-        <input type="number" class="form-control" id="age" name="age">
+        <input type="number" class="form-control" id="age" name="age" required>
       </div>
       <div class="col-md-6">
           <label for="cv" class="form-label">Allega CV</label>
-          <input type="file" class="form-control" id="cv" name="cv">
+          <input type="file" class="form-control" id="cv" name="cv" required>
         </div>
       <div class="col-12 text-center mt-5">
         <button type="submit" class="btn btn-primary">Invia</button>
@@ -41,5 +41,7 @@
     </form>
   </div>
     
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
